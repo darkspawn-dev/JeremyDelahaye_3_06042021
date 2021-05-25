@@ -10,7 +10,7 @@ $tertaire: #99e2d0;
     font-family: Raleway, sans-serif;
     color: black;
   }
-/* titres & p*/
+/************************ titres & paragraphes ************************/
 h1 { 
   font-family: "Shrikland";
 }
@@ -26,12 +26,14 @@ h3 {
   width: 90%;
 }
 h4{
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-family: "Shrikhand", sans-serif;
   padding-bottom: 6px;
   position: relative;
   font-size: 14px;
   width: 100%;
+}
+h5 {
+  text-align: center;
 }
 p {
   font-family: "Roboto", sans-serif;
@@ -44,8 +46,8 @@ p {
   text-align: center;
   width: 80%;
 }
-/* Index */  
-/* header */ 
+/*************************  Index ************************ */  
+/*************************  header ************************ */ 
 .logo {
   display: flex;
   justify-content: center;
@@ -97,7 +99,7 @@ img {
   background:#EAEAEA;
 }
 
-/* Fonctionement */
+/************************* Fonctionement ************************ */
 
 .fonctionnement {
   display: flex;
@@ -159,7 +161,7 @@ img {
     object-fit: cover;
   }
   .article-restaurant {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: auto;
     border-radius: 17px;
     background-color: white;
@@ -207,7 +209,6 @@ img {
  display: flex;
  align-items: center;
  justify-content: center;
- width: 20%;
  height: 100%;
 }
 span {
@@ -308,6 +309,7 @@ margin-right: 20px;
   flex-direction: column;
   align-items: baseline;
   margin-top: 20px;
+  padding-right: 15px;
 }
 
 .plats, .desserts {
@@ -323,15 +325,21 @@ margin-right: 20px;
 
 .card {
   height: 70px;
-  width: 90%;
+  width: 350px;
   margin-top: 15px;
   display: flex;
   margin-left: 15px;
   border-radius: 15px;
   align-items: center;
   background-color: #fff;
-  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  white-space:nowrap;
+  transition: padding-right 450ms ease-in-out;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .info {
   width: 90%;
   padding: 0 10px 0 10px;
@@ -348,6 +356,7 @@ margin-right: 20px;
   display: flex;
   justify-content: center;
 }
+
 button {
   display: flex;
   justify-content: center;
@@ -363,26 +372,53 @@ button {
   width: 200px;
   margin: 20px 0 20px 0;
 }
-
-.btn-valid:hover {
-display: flex;
-background-color: #99e2d0;
-justify-content: center;
-margin: -16px 0px -16px 16px;
-transition-duration: .5s;
-width: 104px;
-cursor: pointer;
+/***************************** Button valid menu *****************************/
+.card:hover {
+ padding-right: 75px;
+}
+.valid:hover {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.valid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 50px;
+  height: 63px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 1;
+  transition: transform 330ms ease-in-out;
+}
+.fa-check-circle{
+  color: black;
+  transition: transform 500ms ease-in-out;
+}
+.fa-check-circle:hover {
+  transform: rotate(360deg) ;
 }
 
 /***************************** Responsive *****************************/
-@media screen and (min-width:800px) and (max-width: 1600px) {
+@media screen and (min-width:800px) and (max-width: 1920px) {
   .background {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 80%;
-  }
+    width: auto;
+}
 
+h3 {
+  width: 100%;
+  text-align: center;
+}
+.header {
+  width: 100%;
+}
 .container {
   display: flex;
   width: 100%;
@@ -395,7 +431,7 @@ cursor: pointer;
 .minicard {
   margin: 30px;
 }
-  .logo-header {
+.logo-header {
     justify-content: space-between;
     align-items: center;
     width: 50%;
@@ -409,14 +445,16 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-  }
+    justify-content: space-between;
 
+  }
   #restaurant {
-    width: 100%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    align-content: space-between;
+    padding: 0 150px 20px 150px ;
   }
 
   .article-restaurant img {
@@ -431,19 +469,40 @@ cursor: pointer;
   .plats, .desserts{
     align-self: baseline;
   }
-  .desserts {
+  .desserts{
     width: 30%;
   }
-h5 {
-  text-align: center;
-}
 
   .footer-section {
     justify-content: center;
   }
 
 /******************************* Animation heart **********************************/
+.heart {
+  cursor: pointer;
+}
+.heart:hover{
+    animation: fill 0.8s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background:linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: bold;
+  }
 
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+}
 /*************************** Animation loading page **********************************/
 .loader{
   display: flex;
@@ -476,6 +535,8 @@ animation: loader-page 3s ease-in-out normal forwards;
 opacity: 1;
 background: #353535;
 position: fixed;
+background-color: transparent;
+
 }
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -497,18 +558,18 @@ position: fixed;
     opacity: 0;
   }
 }
-.loading {
+.loading { /* utilisation d'un generateur */
   margin-bottom: 50px;
   animation-direction: normal;
   background: #9356DC;
-  background: -webkit-linear-gradient(to right, #9356DC 0%, #FF79DA 60%, #99E2D0 100%);
-  background: -moz-linear-gradient(to right, #9356DC 0%, #FF79DA 60%, #99E2D0 100%);
-  background: linear-gradient(to right, #9356DC 0%, #FF79DA 60%, #99E2D0 100%);
+  background: -webkit-linear-gradient(to right, $primary 0%, $secondary 60%, $tertaire 100%);
+  background: -moz-linear-gradient(to right, $primary 0%, $secondary 60%, $tertaire 100%);
+  background: linear-gradient(to right, $primary 0%, $secondary 60%, $tertaire 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: shine 10s infinite linear;
 }
-}
+
 @-webkit-keyframes shine {
   from {
     -webkit-filter: hue-rotate(0deg);
@@ -517,3 +578,33 @@ position: fixed;
     -webkit-filter: hue-rotate(360deg);
   }
 }
+
+/*************************** Animation Menu **********************************/
+.entrees { 
+  animation: fadein linear 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari et Chrome */
+
+}
+
+.plats {
+  animation: fadein 6s;
+  -moz-animation: fadein 6s; /* Firefox */
+  animation-delay: 6s;
+  -webkit-animation: fadein 6s; /* Safari et Chrome */
+}
+.desserts {
+  animation: fadein 8s;
+  -moz-animation: fadein 8s; /* Firefox */
+  -webkit-animation: fadein 8s; /* Safari et Chrome */
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+
