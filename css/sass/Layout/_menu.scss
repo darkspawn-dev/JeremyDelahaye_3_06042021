@@ -1,0 +1,154 @@
+ /************************************* Menu  *************************************/
+
+ .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  .back {
+     width: 100%;
+ }
+ .logo-header {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 50px 10px 0;
+   width: 50%;
+ }
+ .logo-header img {
+   width: 60%;
+   
+ }
+ .image-restaurant img{
+  width: 30%;
+ }
+ .header-menu {
+ display: flex;
+ justify-content: space-between;
+ align-content: center;
+ width: 90%;
+ padding: 20px 0 0 10px;
+ font-style: oblique;
+ margin-right: 20px;
+ }
+ 
+ .menu {
+   position: relative;
+   margin-top: -30px;
+   background-color: #f2f2f2;
+   border-radius: 25px 25px 0 0;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+ .entrees, .plats, .desserts {
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+   margin-top: 20px;
+   padding-right: 15px;
+ }
+ 
+ .plats, .desserts {
+   display: flex;
+   justify-content: space-between;
+ }
+ .underline {
+     width: 2.5rem;
+     border-top: 3px solid #99e2d0;
+     margin: .5rem 0 0 15px;
+ 
+ }
+ button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   border:none;
+   border-radius: 10px;
+   background: linear-gradient(#D579D5, #9356DC);
+   color: #fff;
+   font-weight: 600;
+   cursor: pointer;
+   border-radius: 80px;
+   width: 200px;
+   margin: 20px 0 20px 0;
+ }
+ 
+ .btn {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .card {
+   display: flex;
+   height: 70px;
+   width: 350px;
+   margin-top: 15px;
+   margin-left: 15px;
+   border-radius: 15px;
+   align-items: center;
+   cursor: pointer;
+   position: relative;
+ }
+ 
+ .info {
+   width: 90%;
+   padding: 0 10px 0 10px;
+ }
+ 
+ .info:hover {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+ 
+ .prix {
+   width: 10%;
+   padding-top: 22px;
+ }
+ .card p {
+   font-size: 14px;
+   font-family: roboto;
+ }
+ /***************************** Button valid menu *****************************/
+.validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    width: 60px;
+    height: 63px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    top: 0;
+    opacity: 0;
+    right: -50px;
+    background-color: $tertiaire;
+    position: absolute;
+  }
+  
+  img {
+    display: flex;
+    width: 60%;
+    opacity: 1;
+  }
+  .card:hover {
+   padding-right: 75px;
+   
+   &:hover .validation{
+     transform: translate(-50px);
+     opacity: 1;
+     transition: transform  1500ms ease-in-out;
+  
+   }
+   & .fa-check-circle {
+    color: #fff;
+    transition: transform 1000ms ease-in-out;
+    transform: rotate(360deg);
+  }
+  }
+  
+ 

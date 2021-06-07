@@ -1,0 +1,43 @@
+footer {
+    background-color: darkslategrey;
+    }
+    h5 {
+       padding: 20px 0 10px 10px;
+       font-family: Shrikhand;
+       color: white;
+    }
+   .footer-section {
+     display: flex;
+     align-items: center;
+     align-content: center;
+     padding-bottom: 10px;
+     line-height: 30px;
+   }
+   
+   ul { 
+       list-style-type: none;
+   }
+    li a {
+      display: flex;
+      color: white;
+      text-decoration: none;
+       padding-left: 20px;
+       flex-wrap: wrap;
+       align-items: center
+    }
+    .fa-hands-helping {
+     width: 12px;
+     color: white;
+     margin-right: 20px;
+     line-height: 30px;
+   }
+   .fa-utensils{
+     width: 12px;
+     color: white;
+     margin-right: 20px;
+     line-height: 30px;
+   }
+   .fas.fa-arrow-left {
+   color: rgb(82, 87, 82);
+   }
+   
