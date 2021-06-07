@@ -1,1 +1,36 @@
-
+/************************ titres & paragraphes ************************/
+h1 { 
+    font-family: "Shrikland";
+  }
+  h2{
+    text-align: center;
+    padding-left: 15px;
+  } 
+  h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  h4{
+    font-family: "Shrikhand", sans-serif;
+    padding-bottom: 6px;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+  }
+  h5 {
+    text-align: center;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  .map {
+    padding-left: 15px;
+  }
+  .index1 {
+    text-align: center;
+    width: 80%;
+  }
