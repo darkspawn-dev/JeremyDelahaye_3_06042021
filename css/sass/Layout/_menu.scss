@@ -92,27 +92,35 @@
    align-items: center;
    cursor: pointer;
    position: relative;
+   background-color: white;
  }
  
  .info {
    width: 90%;
    padding: 0 10px 0 10px;
  }
- 
  .info:hover {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+ }
+  p:hover, h4:hover {
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
  }
- 
+
  .prix {
    width: 10%;
    padding-top: 22px;
+   
  }
  .card p {
    font-size: 14px;
    font-family: roboto;
  }
+
  /***************************** Button valid menu *****************************/
 .validation {
     display: flex;
@@ -120,7 +128,7 @@
     align-items: center;
     background-color: #99E2D0;
     width: 60px;
-    height: 63px;
+    height: 70px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     top: 0;
@@ -135,14 +143,18 @@
     width: 60%;
     opacity: 1;
   }
-  .card:hover {
+  .card:hover, .card:active {
    padding-right: 75px;
    
    &:hover .validation{
      transform: translate(-50px);
      opacity: 1;
      transition: transform  1500ms ease-in-out;
-  
+   }
+   &:active .validation {
+     transform:translate(-50px);
+     opacity: 1;
+     transition: transform 1500ms ease-in-out;
    }
    & .fa-check-circle {
     color: #fff;
@@ -151,4 +163,15 @@
   }
   }
   
- 
+ /*************************** Animation Menu **********************************/
+.entrees { 
+  @include fade-in('200ms');
+}
+
+.plats {
+  @include fade-in('500ms');
+}
+.desserts {
+  @include fade-in('900ms');
+}
+
