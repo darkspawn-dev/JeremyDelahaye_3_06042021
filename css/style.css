@@ -692,6 +692,7 @@ span {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
+    padding: 0 100px 0 200px;
   }
 
   .card-new1 {
