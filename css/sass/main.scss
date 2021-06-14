@@ -1,35 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import "./Base/text";
+@import "./Base/text", "./Base/reset";
 @import "./Utils/variable", "./Utils/keyframes";
-@import "./Layout/footer", "./Layout/menu";
-@import "./components/button";
+@import "./Layout/footer", "./Layout/menu", "./Layout/header";
+@import "./components/button", "./components/heart", "./components/loader";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Raleway, sans-serif;
-  color: black;
-}
 
-/*************************  Index ************************ */
+
 /*************************  header ************************ */
-.logo {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0 10px 0
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.index {
-  padding-top: 20px;
-  border: none;
-}
 
 .container {
   display: flex;
@@ -81,7 +58,7 @@ header {
   background-color: #F6F6F6;
   border-radius: 25px;
   box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.17);
-  font-family: "Roboto", sans-serif;
+  font-family: $font;
   margin: 20px 0 30px 0;
 }
 
@@ -171,7 +148,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  font-family: 'roboto';
+  font-family: $font;
   padding-left: 10px;
 }
 
@@ -329,83 +306,3 @@ span {
   }
 }
 
-.heart:hover {
-  cursor: pointer;
-  animation: fill 0.8s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-}
-
-/******************************* Animation heart **********************************/
-@media screen and (min-width:300px) and (max-width:1600px) {
-  .heart {
-    cursor: pointer;
-  }
-
-  .heart:active {
-    animation: fill 0.8s ease-in-out;
-    display: inline-block;
-    opacity: 1;
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-  }
-}
-
-.minicard-container:active {
-  background-color: #f2eafb;
-}
-
-/*************************** Animation loading page **********************************/
-.loader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80px;
-}
-
-.loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid $primary;
-  border-right: 16px solid $secondary;
-  border-bottom: 16px solid $tertiaire;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-.loader-container {
-  position: absolute;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  animation: loader-page 3s ease-in-out normal forwards;
-  opacity: 1;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.8)
-}
-
-.loading {
-  /* utilisation d'un generateur */
-  margin-bottom: 50px;
-  animation-direction: normal;
-  background: #9356DC;
-  background: -webkit-linear-gradient(to right, $primary 0%, $secondary 60%, $tertiaire 100%);
-  background: -moz-linear-gradient(to right, $primary 0%, $secondary 60%, $tertiaire 100%);
-  background: linear-gradient(to right, $primary 0%, $secondary 60%, $tertiaire 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: shine 10s infinite linear;
-}
