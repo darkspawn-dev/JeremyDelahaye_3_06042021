@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/***** Couleurs *****/
 /************************ titres & paragraphes ************************/
 h1 {
   font-family: "Shrikland";
@@ -30,7 +31,7 @@ h5 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
 }
 
@@ -295,7 +296,7 @@ button {
   overflow: hidden;
 }
 
-p:hover, h4:hover {
+p:hover, h4:hover, p:active, h4:active {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -308,7 +309,7 @@ p:hover, h4:hover {
 
 .card p {
   font-size: 14px;
-  font-family: roboto;
+  font-family: "Roboto";
 }
 
 /***************************** Button valid menu *****************************/
