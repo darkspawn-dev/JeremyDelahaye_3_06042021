@@ -105,7 +105,7 @@
   overflow: hidden;
 
  }
-  p:hover, h4:hover {
+  p:hover, h4:hover, p:active, h4:active {
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
