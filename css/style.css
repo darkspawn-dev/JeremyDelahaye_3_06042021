@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 /***** Couleurs *****/
 /************************ titres & paragraphes ************************/
 h1 {
@@ -31,7 +33,7 @@ h5 {
 }
 
 p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -203,7 +205,7 @@ li a {
 }
 
 .logo-header img {
-  width: 60%;
+  width: 50%;
 }
 
 .image-restaurant img {
@@ -214,7 +216,7 @@ li a {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 90%;
+  width: 100%;
   padding: 20px 0 0 10px;
   font-style: oblique;
   margin-right: 20px;
@@ -275,7 +277,7 @@ button {
 .card {
   display: flex;
   height: 70px;
-  width: 350px;
+  width: 315px;
   margin-top: 15px;
   margin-left: 15px;
   border-radius: 15px;
@@ -523,7 +525,7 @@ header {
   background-color: #F6F6F6;
   border-radius: 25px;
   box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.17);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   margin: 20px 0 30px 0;
 }
 
@@ -612,7 +614,7 @@ header {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   padding-left: 10px;
 }
 
@@ -643,6 +645,7 @@ header {
 span {
   line-height: 1;
   font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 /***************************** Responsive *****************************/
@@ -656,6 +659,10 @@ span {
   h3 {
     width: 100%;
     text-align: center;
+  }
+
+  .card {
+    width: 350px;
   }
 
   .header {
@@ -692,7 +699,7 @@ span {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 100px 0 200px;
+    padding: 0 100px 0 100px;
   }
 
   .card-new1 {
@@ -708,7 +715,7 @@ span {
 
   .card-new1 {
     position: absolute;
-    left: 32%;
+    left: 33%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1920px) and (min-width: 900px) and (max-width: 1440px) {
@@ -735,6 +742,10 @@ span {
 
   .choice {
     display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
     flex-direction: column;
   }
 }
