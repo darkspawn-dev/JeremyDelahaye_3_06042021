@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 @import "./Base/text", "./Base/reset";
 @import "./Utils/variable", "./Utils/keyframes";
 @import "./Layout/footer", "./Layout/menu", "./Layout/header";
@@ -58,7 +59,7 @@
   background-color: #F6F6F6;
   border-radius: 25px;
   box-shadow: 0px 2px 19px -2px rgba(0, 0, 0, 0.17);
-  font-family: $font;
+  font-family: 'Roboto', sans-serif;
   margin: 20px 0 30px 0;
 }
 
@@ -71,6 +72,7 @@
   color: #333;
   border-radius: 17px 17px 17px 17px;
   width: 300px;
+  
 }
 
 .minicard-container:hover {
@@ -148,7 +150,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  font-family: $font;
+  font-family: 'Roboto', sans-serif;
   padding-left: 10px;
 }
 
@@ -180,6 +182,7 @@
 span {
   line-height: 1;
   font-weight: normal;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -195,7 +198,9 @@ span {
     width: 100%;
     text-align: center;
   }
-
+.card {
+  width: 350px;
+}
   .header {
     width: 100%;
   }
@@ -230,8 +235,9 @@ span {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 100px 0 200px;
+    padding: 0 100px 0 100px;
   }
+
 
   .card-new1 {
     position: absolute;
@@ -245,7 +251,7 @@ span {
   }
   .card-new1 {
     position: absolute;
-    left: 32%;
+    left: 33%;
   }
  
   @media screen and (min-width:900px) and (max-width: 1440px) {
@@ -270,6 +276,9 @@ span {
     }
     .choice {
       display: flex;
+      flex-direction: column;
+    }
+    .menu {
       flex-direction: column;
     }
 }
@@ -300,6 +309,7 @@ span {
 
   .desserts {
     width: 30%;
+ 
   }
 
   .footer-section {
