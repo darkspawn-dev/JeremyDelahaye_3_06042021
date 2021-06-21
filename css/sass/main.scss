@@ -72,7 +72,7 @@
   color: #333;
   border-radius: 17px 17px 17px 17px;
   width: 300px;
-  
+
 }
 
 .minicard-container:hover {
@@ -198,9 +198,11 @@ span {
     width: 100%;
     text-align: center;
   }
-.card {
-  width: 350px;
-}
+
+  .card {
+    width: 350px;
+  }
+
   .header {
     width: 100%;
   }
@@ -245,43 +247,49 @@ span {
   }
 
   .card-new {
-  position: absolute;
+    position: absolute;
     left: 88%;
-    margin-right:-5px;
+    margin-right: -5px;
   }
+
   .card-new1 {
     position: absolute;
     left: 33%;
   }
- 
+
   @media screen and (min-width:900px) and (max-width: 1440px) {
-  .card-new {
-  position: absolute;
-    left: 83%;
+    .card-new {
+      position: absolute;
+      left: 83%;
+    }
+
+    .card-new1 {
+      position: absolute;
+      left: 42%;
+    }
   }
-  .card-new1 {
-    position: absolute;
-    left: 42%;
-  }
-  }
+
   @media screen and (min-width:800px) and (max-width: 1280px) {
     .card-new1 {
       position: absolute;
       left: 75%;
     }
-  
+
     .card-new {
-    position: absolute;
+      position: absolute;
       left: 75%;
     }
+
     .choice {
       display: flex;
       flex-direction: column;
     }
+
     .menu {
       flex-direction: column;
     }
-}
+  }
+
   #restaurant {
     display: flex;
     flex-direction: row;
@@ -309,11 +317,10 @@ span {
 
   .desserts {
     width: 30%;
- 
+
   }
 
   .footer-section {
     justify-content: center;
   }
 }
-
