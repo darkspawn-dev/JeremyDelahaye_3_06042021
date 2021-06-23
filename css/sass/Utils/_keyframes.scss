@@ -1,74 +1,105 @@
 /******************************* Animation heart **********************************/
 @keyframes fill {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
 
-  /*************************** Animation loading page **********************************/
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  50% {
+    opacity: 0.5;
   }
-  
-  @keyframes loader-page {
-    0% {
-      opacity: 1;
-    }
-    75% {
-      opacity: 1;
-    }
-    99% {
-      opacity: 0;
-    }
-    100% {
-      visibility: hidden;
-      opacity: 0;
-    }
+
+  100% {
+    opacity: 1;
+  }
 }
-  @keyframes shine {
-    from {
-      -webkit-filter: hue-rotate(0deg);
-    }
-    to {
-      -webkit-filter: hue-rotate(360deg);
-    }
-  }
-  @-webkit-keyframes shine {
-    from {
-      -webkit-filter: hue-rotate(0deg);
-    }
-    to {
-      -webkit-filter: hue-rotate(360deg);
-    }
+
+/*************************** Animation loading page **********************************/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
 
-  /*************************** Animation Menu **********************************/
-  @mixin fade-in($waitTime) {
-    animation: 
-        wait #{$waitTime},
-        fade-in 800ms #{$waitTime};
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-page {
+  0% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes shine {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+/*************************** Animation Menu **********************************/
+@mixin fade-in($waitTime) {
+  animation: wait #{$waitTime},
+  fade-in 800ms #{$waitTime};
 }
 
 @keyframes wait {
-    0% { opacity: 0; }
-    100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-  /*************************** Animation Card Restaurant **********************************/
-  @keyframes clignote {
-    0%  {opacity: 1;}
-    50%  {opacity: 0;}
-    100%  {opacity: 1;}
+/*************************** Animation Card Restaurant **********************************/
+@keyframes clignote {
+  0% {
+    opacity: 1;
   }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
