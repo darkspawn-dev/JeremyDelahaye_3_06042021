@@ -139,26 +139,22 @@ p {
 footer {
   background-color: darkslategrey;
 }
-
-h5 {
+footer h5 {
   padding: 20px 0 10px 10px;
   font-family: Shrikhand;
   color: white;
 }
-
-.footer-section {
+footer .footer-section {
   display: flex;
   align-items: center;
   align-content: center;
   padding-bottom: 10px;
   line-height: 30px;
 }
-
-ul {
+footer ul {
   list-style-type: none;
 }
-
-li a {
+footer li a {
   display: flex;
   color: white;
   text-decoration: none;
@@ -166,22 +162,19 @@ li a {
   flex-wrap: wrap;
   align-items: center;
 }
-
-.fa-hands-helping {
+footer .fa-hands-helping {
   width: 12px;
   color: white;
   margin-right: 20px;
   line-height: 30px;
 }
-
-.fa-utensils {
+footer .fa-utensils {
   width: 12px;
   color: white;
   margin-right: 20px;
   line-height: 30px;
 }
-
-.fas.fa-arrow-left {
+footer .fas.fa-arrow-left {
   color: #525752;
 }
 
@@ -233,7 +226,9 @@ li a {
   justify-content: center;
 }
 
-.entrees, .plats, .desserts {
+.entrees,
+.plats,
+.desserts {
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -241,7 +236,8 @@ li a {
   padding-right: 15px;
 }
 
-.plats, .desserts {
+.plats,
+.desserts {
   display: flex;
   justify-content: space-between;
 }
@@ -277,7 +273,7 @@ button {
 .card {
   display: flex;
   height: 70px;
-  width: 315px;
+  width: 320px;
   margin-top: 15px;
   margin-left: 15px;
   border-radius: 15px;
@@ -292,18 +288,6 @@ button {
   padding: 0 10px 0 10px;
 }
 
-.info:hover {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-p:hover, h4:hover, p:active, h4:active {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .prix {
   width: 10%;
   padding-top: 22px;
@@ -311,7 +295,7 @@ p:hover, h4:hover, p:active, h4:active {
 
 .card p {
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 /***************************** Button valid menu *****************************/
@@ -319,7 +303,7 @@ p:hover, h4:hover, p:active, h4:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 60px;
   height: 70px;
   border-top-right-radius: 15px;
@@ -337,23 +321,40 @@ img {
   opacity: 1;
 }
 
-.card:hover, .card:active {
+.card:hover,
+.card:active {
   padding-right: 75px;
+  white-space: nowrap;
 }
-.card:hover:hover .validation, .card:active:hover .validation {
+.card:hover:hover .validation,
+.card:active:hover .validation {
   transform: translate(-50px);
   opacity: 1;
   transition: transform 1500ms ease-in-out;
 }
-.card:hover:active .validation, .card:active:active .validation {
+.card:hover:active .validation,
+.card:active:active .validation {
   transform: translate(-50px);
   opacity: 1;
   transition: transform 1500ms ease-in-out;
 }
-.card:hover .fa-check-circle, .card:active .fa-check-circle {
+.card:hover .fa-check-circle,
+.card:active .fa-check-circle {
   color: #fff;
   transition: transform 1000ms ease-in-out;
   transform: rotate(360deg);
+}
+.card:hover p:hover,
+.card:hover h4:hover,
+.card:hover p:active,
+.card:hover h4:active,
+.card:active p:hover,
+.card:active h4:hover,
+.card:active p:active,
+.card:active h4:active {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*************************** Animation Menu **********************************/
@@ -387,11 +388,13 @@ header {
   border: none;
 }
 
-.btn-explorer:hover, .command:hover {
+.btn-explorer:hover,
+.command:hover {
   box-shadow: #ff79da 4px 4px 4px 0;
 }
 
-.btn-explorer:active, .command:active {
+.btn-explorer:active,
+.command:active {
   box-shadow: #ff79da 4px 4px 4px 0;
 }
 
@@ -712,11 +715,6 @@ span {
     left: 88%;
     margin-right: -5px;
   }
-
-  .card-new1 {
-    position: absolute;
-    left: 33%;
-  }
 }
 @media screen and (min-width: 800px) and (max-width: 1920px) and (min-width: 900px) and (max-width: 1440px) {
   .card-new {
@@ -732,12 +730,12 @@ span {
 @media screen and (min-width: 800px) and (max-width: 1920px) and (min-width: 800px) and (max-width: 1280px) {
   .card-new1 {
     position: absolute;
-    left: 75%;
+    left: 49%;
   }
 
   .card-new {
     position: absolute;
-    left: 75%;
+    left: 49%;
   }
 
   .choice {
