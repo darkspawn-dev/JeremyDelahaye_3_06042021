@@ -31,7 +31,7 @@
    display: flex;
    justify-content: space-between;
    align-content: center;
-   width: 100%;
+   width: 90%;
    padding: 20px 0 0 10px;
    font-style: oblique;
    margin-right: 20px;
@@ -48,9 +48,9 @@
    justify-content: center;
  }
 
- .entrees,
- .plats,
- .desserts {
+ #entrees,
+ #plats,
+ #desserts {
    display: flex;
    flex-direction: column;
    align-items: baseline;
@@ -58,8 +58,8 @@
    padding-right: 15px;
  }
 
- .plats,
- .desserts {
+ #plats,
+ #desserts {
    display: flex;
    justify-content: space-between;
  }
@@ -96,7 +96,7 @@
  .card {
    display: flex;
    height: 70px;
-   width: 315px;
+   width: 320px;
    margin-top: 15px;
    margin-left: 15px;
    border-radius: 15px;
@@ -104,6 +104,10 @@
    cursor: pointer;
    position: relative;
    background-color: white;
+   white-space: nowrap;
+   text-overflow: ellipsis !important;
+   //overflow: hidden;
+   transition: padding-right 800ms ease-in-out;
  }
 
  .info {
@@ -112,14 +116,22 @@
  }
 
  .prix {
-   width: 10%;
-   padding-top: 22px;
 
+   width: 10%;
+   padding: 22px 0 0 5px;
+   margin-left: -10px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
  }
 
  .card p {
    font-size: 14px;
    font-family: "Roboto", sans-serif;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   position: relative;
  }
 
  /***************************** Button valid menu *****************************/
@@ -149,17 +161,20 @@
  .card:active {
    padding-right: 75px;
    white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
 
    &:hover .validation {
      transform: translate(-50px);
      opacity: 1;
-     transition: transform 1500ms ease-in-out;
+     transition: transform 1000ms ease-in-out;
+  
    }
 
    &:active .validation {
      transform: translate(-50px);
      opacity: 1;
-     transition: transform 1500ms ease-in-out;
+     transition: transform 1000ms ease-in-out;
    }
 
    & .fa-check-circle {
@@ -179,14 +194,14 @@
  }
 
  /*************************** Animation Menu **********************************/
- .entrees {
+ #entrees {
    @include fade-in('200ms');
  }
 
- .plats {
+ #plats {
    @include fade-in('500ms');
  }
 
- .desserts {
+ #desserts {
    @include fade-in('900ms');
  }
