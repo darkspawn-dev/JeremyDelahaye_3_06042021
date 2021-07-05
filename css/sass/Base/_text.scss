@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 @import "../Utils/variable";
 
 /************************ titres & paragraphes ************************/
 h1 {
-  font-family: "Shrikland";
+  font-family: "Shrikhand";
+  margin-left: -10px;
 }
 
 h2 {
-  text-align: center;
-  padding-left: 15px;
+  padding: 20px 0 0 15px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 h3 {
@@ -20,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-bottom: 6px;
   position: relative;
   font-size: 14px;
@@ -28,9 +33,11 @@ h4 {
 }
 
 h5 {
-  text-align: center;
+  margin-left: 10px;
 }
-
+p.index1 {
+  color: #808080;
+}
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -43,4 +50,8 @@ p {
 .index1 {
   text-align: center;
   width: 80%;
+}
+h2.index {
+  font-weight: bold;
+  padding: 20px 10px 10px 10px;
 }
