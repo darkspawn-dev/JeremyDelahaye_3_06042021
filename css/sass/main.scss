@@ -193,7 +193,8 @@ span {
 /***************************** Responsive *****************************/
 
 
-@media screen and (min-width:1280px) and (max-height: 1920px) {
+@media screen and (min-width:1281px) and (max-height: 1920px) {
+
   h5 {
     text-align: center; 
   }
@@ -246,7 +247,7 @@ span {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    
+    padding: 0 100px 0 100px;
   }
 
   #restaurant {
@@ -276,18 +277,24 @@ span {
 
   #desserts {
     width: 30%;
+
   }
 
   .footer-section {
     justify-content: center;
   }
 }
-
 @media screen and (min-width:800px) and (max-height: 1280px) {
-  h5 {
-    text-align: center;
-  }
-  .footer-section {
- justify-content: center;
-  }
+#dessers {
+  padding-top: 50px
+}
+.footer-section {
+  justify-content: center;
+}
+h5 {
+  text-align: center;
+}
+.menu {
+  align-items: baseline;
+}
 }
