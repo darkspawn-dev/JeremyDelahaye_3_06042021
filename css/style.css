@@ -300,6 +300,7 @@ button {
   text-overflow: ellipsis !important;
   transition: padding-right 800ms ease-in-out;
   position: relative;
+  overflow: hidden;
 }
 
 .info {
