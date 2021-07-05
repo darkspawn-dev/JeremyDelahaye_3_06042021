@@ -6,11 +6,10 @@
 /************************ titres & paragraphes ************************/
 h1 {
   font-family: "Shrikhand";
-  margin-left: -10px;
 }
 
 h2 {
-  padding: 20px 0 0 15px;
+  padding-top: 20px;
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 16px;
@@ -57,6 +56,10 @@ p {
 h2.index {
   font-weight: bold;
   padding: 20px 10px 10px 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 * {
@@ -225,7 +228,6 @@ footer .fas.fa-arrow-left {
   align-content: center;
   width: 90%;
   padding: 20px 0 0 10px;
-  font-style: oblique;
   margin-right: 20px;
 }
 
@@ -236,7 +238,6 @@ footer .fas.fa-arrow-left {
   border-radius: 25px 25px 0 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
 }
 
@@ -246,6 +247,7 @@ footer .fas.fa-arrow-left {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  justify-content: center;
   margin-top: 20px;
   padding-right: 15px;
 }
@@ -259,7 +261,7 @@ footer .fas.fa-arrow-left {
 .underline {
   width: 2.5rem;
   border-top: 3px solid #99e2d0;
-  margin: 0.5rem 0 0 15px;
+  margin-top: 0.5rem;
 }
 
 button {
@@ -289,7 +291,6 @@ button {
   height: 70px;
   width: 320px;
   margin-top: 15px;
-  margin-left: 15px;
   border-radius: 15px;
   align-items: center;
   cursor: pointer;
@@ -298,6 +299,7 @@ button {
   white-space: nowrap;
   text-overflow: ellipsis !important;
   transition: padding-right 800ms ease-in-out;
+  position: relative;
 }
 
 .info {
@@ -318,10 +320,14 @@ button {
 .card p {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+}
+
+.card p, .card h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   position: relative;
+  padding-right: 10px;
 }
 
 /***************************** Button valid menu *****************************/
@@ -335,9 +341,8 @@ button {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   top: 0;
-  opacity: 0;
   right: -50px;
-  background-color: #99e2d0;
+  opacity: 0;
   position: absolute;
 }
 
@@ -349,7 +354,7 @@ img {
 
 .card:hover,
 .card:active {
-  padding-right: 75px;
+  padding-right: 70px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -371,18 +376,6 @@ img {
   color: #fff;
   transition: transform 1000ms ease-in-out;
   transform: rotate(360deg);
-}
-.card:hover p:hover,
-.card:hover h4:hover,
-.card:hover p:active,
-.card:hover h4:active,
-.card:active p:hover,
-.card:active h4:hover,
-.card:active p:active,
-.card:active h4:active {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /*************************** Animation Menu **********************************/
@@ -423,7 +416,6 @@ header {
 
 .header-menu {
   display: flex;
-  margin-left: 35px;
   align-items: baseline;
 }
 
@@ -799,7 +791,7 @@ span {
   }
 }
 @media screen and (min-width: 800px) and (max-height: 1280px) {
-  #dessers {
+  #desserts {
     padding-top: 50px;
   }
 
@@ -817,6 +809,3 @@ span {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
