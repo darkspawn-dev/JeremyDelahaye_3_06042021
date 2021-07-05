@@ -6,7 +6,6 @@
 @import "./components/button", "./components/heart", "./components/loader";
 
 
-
 /*************************  header ************************ */
 
 .container {
@@ -14,6 +13,9 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: #F6F6F6;
+}
+.fas {
+  color: #808080;
 }
 
 .container .button .btn-explorer {
@@ -78,7 +80,9 @@
 .minicard-container:hover {
   background-color: #f2eafb;
 }
-
+.icon:hover {
+  color: blue;
+}
 .circle {
   display: flex;
   justify-content: center;
@@ -96,15 +100,14 @@
   width: 50px;
   font-size: 20px;
   text-align: center;
-  color: #818181;
+  color: #808080;
 }
 
 /* restaurant */
 .card-new,
 .card-new1 {
-  float: right;
   position: absolute;
-  left: 68%;
+  right: 3%;
   background-color: $tertiaire;
   margin-top: 20px;
   animation-duration: .7s;
@@ -112,7 +115,9 @@
   animation-iteration-count: infinite;
   transition: none;
 }
-
+.new {
+  padding: 5px 5px 5px 5px;
+}
 .article-restaurant img {
   width: 300px;
   height: 120px;
@@ -121,6 +126,7 @@
 }
 
 .article-restaurant {
+  position: relative;
   margin-bottom: 20px;
   width: auto;
   border-radius: 17px;
@@ -157,7 +163,6 @@
 #restaurant {
   display: flex;
   flex-direction: column;
-  ;
   align-items: center;
   justify-content: space-between;
   background-color: #f2f2f2;
@@ -181,13 +186,17 @@
 
 span {
   line-height: 1;
-  font-weight: normal;
   font-family: 'Roboto', sans-serif;
 }
 
 
 /***************************** Responsive *****************************/
-@media screen and (min-width:800px) and (max-width: 1920px) {
+
+
+@media screen and (min-width:1280px) and (max-height: 1920px) {
+  h5 {
+    text-align: center; 
+  }
   .background {
     display: flex;
     justify-content: center;
@@ -224,7 +233,7 @@ span {
   .logo-header {
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 50%;
     margin: 10px 50px 10px 0;
   }
 
@@ -237,57 +246,7 @@ span {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 100px 0 100px;
-  }
-
-
-  .card-new1 {
-    position: absolute;
-    left: 32%;
-  }
-
-  .card-new {
-    position: absolute;
-    left: 88%;
-    margin-right: -5px;
-  }
-
-  .card-new1 {
-    position: absolute;
-    left: 33%;
-  }
-
-  @media screen and (min-width:900px) and (max-width: 1440px) {
-    .card-new {
-      position: absolute;
-      left: 83%;
-    }
-
-    .card-new1 {
-      position: absolute;
-      left: 42%;
-    }
-  }
-
-  @media screen and (min-width:800px) and (max-width: 1280px) {
-    .card-new1 {
-      position: absolute;
-      left: 49%;
-    }
-
-    .card-new {
-      position: absolute;
-      left: 49%;
-    }
-
-    .choice {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .menu {
-      flex-direction: column;
-    }
+    
   }
 
   #restaurant {
@@ -310,17 +269,25 @@ span {
     width: 30%;
   }
 
-  .plats,
-  .desserts {
+  #plats,
+  #desserts {
     align-self: baseline;
   }
 
-  .desserts {
+  #desserts {
     width: 30%;
-
   }
 
   .footer-section {
     justify-content: center;
+  }
+}
+
+@media screen and (min-width:800px) and (max-height: 1280px) {
+  h5 {
+    text-align: center;
+  }
+  .footer-section {
+ justify-content: center;
   }
 }
