@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /***** Couleurs *****/
 /************************ titres & paragraphes ************************/
 h1 {
-  font-family: "Shrikland";
+  font-family: "Shrikhand";
 }
 
 h2 {
   text-align: center;
   padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 h3 {
@@ -21,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-bottom: 6px;
   position: relative;
   font-size: 14px;
@@ -29,7 +33,11 @@ h4 {
 }
 
 h5 {
-  text-align: center;
+  margin-left: 10px;
+}
+
+p.index1 {
+  color: #808080;
 }
 
 p {
@@ -44,6 +52,11 @@ p {
 .index1 {
   text-align: center;
   width: 80%;
+}
+
+h2.index {
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 
 * {
@@ -143,6 +156,7 @@ footer h5 {
   padding: 20px 0 10px 10px;
   font-family: Shrikhand;
   color: white;
+  font-size: 16px;
 }
 footer .footer-section {
   display: flex;
@@ -209,7 +223,7 @@ footer .fas.fa-arrow-left {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 100%;
+  width: 90%;
   padding: 20px 0 0 10px;
   font-style: oblique;
   margin-right: 20px;
@@ -226,9 +240,9 @@ footer .fas.fa-arrow-left {
   justify-content: center;
 }
 
-.entrees,
-.plats,
-.desserts {
+#entrees,
+#plats,
+#desserts {
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -236,8 +250,8 @@ footer .fas.fa-arrow-left {
   padding-right: 15px;
 }
 
-.plats,
-.desserts {
+#plats,
+#desserts {
   display: flex;
   justify-content: space-between;
 }
@@ -281,6 +295,9 @@ button {
   cursor: pointer;
   position: relative;
   background-color: white;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  transition: padding-right 800ms ease-in-out;
 }
 
 .info {
@@ -290,12 +307,20 @@ button {
 
 .prix {
   width: 10%;
-  padding-top: 22px;
+  padding: 22px 0 0 5px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .card p {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
 }
 
 /***************************** Button valid menu *****************************/
@@ -325,18 +350,20 @@ img {
 .card:active {
   padding-right: 75px;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card:hover:hover .validation,
 .card:active:hover .validation {
   transform: translate(-50px);
   opacity: 1;
-  transition: transform 1500ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
 }
 .card:hover:active .validation,
 .card:active:active .validation {
   transform: translate(-50px);
   opacity: 1;
-  transition: transform 1500ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
 }
 .card:hover .fa-check-circle,
 .card:active .fa-check-circle {
@@ -358,15 +385,15 @@ img {
 }
 
 /*************************** Animation Menu **********************************/
-.entrees {
+#entrees {
   animation: wait 200ms, fade-in 800ms 200ms;
 }
 
-.plats {
+#plats {
   animation: wait 500ms, fade-in 800ms 500ms;
 }
 
-.desserts {
+#desserts {
   animation: wait 900ms, fade-in 800ms 900ms;
 }
 
@@ -375,6 +402,7 @@ img {
   display: flex;
   justify-content: center;
   margin: 10px 0 10px 0;
+  width: 50%;
 }
 
 header {
@@ -386,6 +414,16 @@ header {
 .index {
   padding-top: 20px;
   border: none;
+}
+
+.img {
+  width: 50%;
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 35px;
+  align-items: baseline;
 }
 
 .btn-explorer:hover,
@@ -416,10 +454,10 @@ header {
   }
 
   .heart:active {
-    animation: fill 0.8s ease-in-out;
+    animation: fill 0.8s ease-in-out forwards;
     display: inline-block;
     opacity: 1;
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #909090);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -486,6 +524,10 @@ header {
   background-color: #F6F6F6;
 }
 
+.fas {
+  color: #808080;
+}
+
 .container .button .btn-explorer {
   display: flex;
   justify-content: center;
@@ -547,6 +589,10 @@ header {
   background-color: #f2eafb;
 }
 
+.icon:hover {
+  color: blue;
+}
+
 .circle {
   display: flex;
   justify-content: center;
@@ -564,21 +610,24 @@ header {
   width: 50px;
   font-size: 20px;
   text-align: center;
-  color: #818181;
+  color: #808080;
 }
 
 /* restaurant */
 .card-new,
 .card-new1 {
-  float: right;
   position: absolute;
-  left: 68%;
+  right: 3%;
   background-color: #99e2d0;
   margin-top: 20px;
   animation-duration: 0.7s;
   animation-name: clignote;
   animation-iteration-count: infinite;
   transition: none;
+}
+
+.new {
+  padding: 5px 5px 5px 5px;
 }
 
 .article-restaurant img {
@@ -589,6 +638,7 @@ header {
 }
 
 .article-restaurant {
+  position: relative;
   margin-bottom: 20px;
   width: auto;
   border-radius: 17px;
@@ -647,12 +697,15 @@ header {
 
 span {
   line-height: 1;
-  font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
 
 /***************************** Responsive *****************************/
-@media screen and (min-width: 800px) and (max-width: 1920px) {
+@media screen and (min-width: 1280px) and (max-height: 1920px) {
+  h5 {
+    text-align: center;
+  }
+
   .background {
     display: flex;
     justify-content: center;
@@ -689,7 +742,7 @@ span {
   .logo-header {
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 50%;
     margin: 10px 50px 10px 0;
   }
 
@@ -702,52 +755,8 @@ span {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    padding: 0 100px 0 100px;
   }
 
-  .card-new1 {
-    position: absolute;
-    left: 32%;
-  }
-
-  .card-new {
-    position: absolute;
-    left: 88%;
-    margin-right: -5px;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) and (min-width: 900px) and (max-width: 1440px) {
-  .card-new {
-    position: absolute;
-    left: 83%;
-  }
-
-  .card-new1 {
-    position: absolute;
-    left: 42%;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) and (min-width: 800px) and (max-width: 1280px) {
-  .card-new1 {
-    position: absolute;
-    left: 49%;
-  }
-
-  .card-new {
-    position: absolute;
-    left: 49%;
-  }
-
-  .choice {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) {
   #restaurant {
     display: flex;
     flex-direction: row;
@@ -756,32 +765,36 @@ span {
     align-content: space-between;
     padding: 0 150px 20px 150px;
   }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) {
+
   .article-restaurant img {
     width: 550px;
     height: 150px;
     border-radius: 17px 17px 0px 0px;
     object-fit: cover;
   }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) {
+
   .btn-explorer {
     width: 30%;
   }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) {
-  .plats,
-.desserts {
+
+  #plats,
+#desserts {
     align-self: baseline;
   }
-}
-@media screen and (min-width: 800px) and (max-width: 1920px) {
-  .desserts {
+
+  #desserts {
     width: 30%;
   }
+
+  .footer-section {
+    justify-content: center;
+  }
 }
-@media screen and (min-width: 800px) and (max-width: 1920px) {
+@media screen and (min-width: 800px) and (max-height: 1280px) {
+  h5 {
+    text-align: center;
+  }
+
   .footer-section {
     justify-content: center;
   }
