@@ -33,7 +33,6 @@
    align-content: center;
    width: 90%;
    padding: 20px 0 0 10px;
-   font-style: oblique;
    margin-right: 20px;
  }
 
@@ -44,7 +43,6 @@
    border-radius: 25px 25px 0 0;
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
    justify-content: center;
  }
 
@@ -54,6 +52,7 @@
    display: flex;
    flex-direction: column;
    align-items: baseline;
+   justify-content: center;
    margin-top: 20px;
    padding-right: 15px;
  }
@@ -67,7 +66,7 @@
  .underline {
    width: 2.5rem;
    border-top: 3px solid $tertiaire;
-   margin: .5rem 0 0 15px;
+   margin-top: .5rem;
 
  }
 
@@ -98,7 +97,6 @@
    height: 70px;
    width: 320px;
    margin-top: 15px;
-   margin-left: 15px;
    border-radius: 15px;
    align-items: center;
    cursor: pointer;
@@ -106,8 +104,8 @@
    background-color: white;
    white-space: nowrap;
    text-overflow: ellipsis !important;
-   //overflow: hidden;
    transition: padding-right 800ms ease-in-out;
+   position: relative;
  }
 
  .info {
@@ -116,7 +114,6 @@
  }
 
  .prix {
-
    width: 10%;
    padding: 22px 0 0 5px;
    margin-right: 10px;
@@ -129,10 +126,14 @@
  .card p {
    font-size: 14px;
    font-family: "Roboto", sans-serif;
+ }
+
+  .card p, .card h4 { 
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
    position: relative;
+    padding-right: 10px;
  }
 
  /***************************** Button valid menu *****************************/
@@ -146,10 +147,9 @@
    border-top-right-radius: 15px;
    border-bottom-right-radius: 15px;
    top: 0;
-   opacity: 0;
    right: -50px;
-   background-color: $tertiaire;
-   position: absolute;
+   opacity: 0;
+   position: absolute;  
  }
 
  img {
@@ -160,7 +160,7 @@
 
  .card:hover,
  .card:active {
-   padding-right: 75px;
+   padding-right: 70px;
    white-space: nowrap;
    text-overflow: ellipsis;
    overflow: hidden;
@@ -184,14 +184,6 @@
      transform: rotate(360deg);
    }
 
-   p:hover,
-   h4:hover,
-   p:active,
-   h4:active {
-     white-space: nowrap;
-     overflow: hidden;
-     text-overflow: ellipsis;
-   }
  }
 
  /*************************** Animation Menu **********************************/
