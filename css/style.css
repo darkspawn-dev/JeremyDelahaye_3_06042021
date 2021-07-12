@@ -228,7 +228,6 @@ footer .fas.fa-arrow-left {
   align-content: center;
   width: 90%;
   padding: 20px 0 0 10px;
-  margin-right: 20px;
 }
 
 .menu {
@@ -250,6 +249,7 @@ footer .fas.fa-arrow-left {
   justify-content: center;
   margin-top: 20px;
   padding-right: 15px;
+  padding-left: 15px;
 }
 
 #plats,
@@ -272,6 +272,7 @@ button {
   border: none;
   border-radius: 10px;
   background: linear-gradient(#D579D5, #9356DC);
+  box-shadow: #ff79da 0px 4px 8px;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -381,15 +382,15 @@ img {
 
 /*************************** Animation Menu **********************************/
 #entrees {
-  animation: wait 200ms, fade-in 800ms 200ms;
+  animation: wait 400ms, fade-in 800ms 400ms;
 }
 
 #plats {
-  animation: wait 500ms, fade-in 800ms 500ms;
+  animation: wait 700ms, fade-in 800ms 700ms;
 }
 
 #desserts {
-  animation: wait 900ms, fade-in 800ms 900ms;
+  animation: wait 1200ms, fade-in 800ms 1200ms;
 }
 
 /*************************  header ************************ */
@@ -422,12 +423,14 @@ header {
 
 .btn-explorer:hover,
 .command:hover {
-  box-shadow: #ff79da 4px 4px 4px 0;
+  box-shadow: #ff79da 0px 10px 12px;
+  opacity: 80%;
 }
 
 .btn-explorer:active,
 .command:active {
-  box-shadow: #ff79da 4px 4px 4px 0;
+  box-shadow: #ff79da 0px 10px 12px;
+  opacity: 80%;
 }
 
 /******************************* Animation heart **********************************/
@@ -457,10 +460,6 @@ header {
     font-weight: bold;
   }
 }
-.minicard-container:active {
-  background-color: #f2eafb;
-}
-
 /*************************** Animation loading page **********************************/
 .loader {
   display: flex;
@@ -533,6 +532,7 @@ header {
   border: none;
   border-radius: 10px;
   background: linear-gradient(#D579D5, #9356DC);
+  box-shadow: #ff79da 0px 4px 8px;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -574,17 +574,15 @@ header {
   align-items: center;
   height: 70px;
   background-color: #f2f2f2;
-  color: #333;
   border-radius: 17px 17px 17px 17px;
   width: 300px;
 }
 
-.minicard-container:hover {
+.minicard-container:active {
   background-color: #f2eafb;
 }
-
-.icon:hover {
-  color: blue;
+.minicard-container:active:active .fas {
+  color: #9356DC;
 }
 
 .circle {
@@ -604,7 +602,6 @@ header {
   width: 50px;
   font-size: 20px;
   text-align: center;
-  color: #808080;
 }
 
 /* restaurant */
@@ -700,6 +697,13 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .minicard-container:hover {
+    background: #f2eafb;
+  }
+  .minicard-container:hover:hover .fas {
+    color: #9356DC;
   }
 
   h5 {
