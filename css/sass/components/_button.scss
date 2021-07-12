@@ -1,9 +1,11 @@
 .btn-explorer:hover,
 .command:hover {
-    box-shadow: $secondary 4px 4px 4px 0;
+    box-shadow: $secondary 0px 10px 12px;
+    opacity: 80%;
 }
 
 .btn-explorer:active,
 .command:active {
-    box-shadow: $secondary 4px 4px 4px 0;
+    box-shadow: $secondary 0px 10px 12px;
+    opacity: 80%;
 }
