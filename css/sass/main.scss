@@ -29,6 +29,7 @@
   border: none;
   border-radius: 10px;
   background: linear-gradient(#D579D5, $primary);
+  box-shadow: $secondary 0px 4px 8px ;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
@@ -71,17 +72,15 @@
   align-items: center;
   height: 70px;
   background-color: #f2f2f2;
-  color: #333;
   border-radius: 17px 17px 17px 17px;
   width: 300px;
-
 }
-
-.minicard-container:hover {
+.minicard-container:active {
   background-color: #f2eafb;
-}
-.icon:hover {
-  color: blue;
+
+  &:active .fas {
+    color: $primary;
+  }
 }
 .circle {
   display: flex;
@@ -100,7 +99,6 @@
   width: 50px;
   font-size: 20px;
   text-align: center;
-  color: #808080;
 }
 
 /* restaurant */
@@ -198,6 +196,12 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .minicard-container:hover{
+    background: #f2eafb;
+    &:hover .fas{
+      color:$primary
+    }
   }
 
   h5 {
