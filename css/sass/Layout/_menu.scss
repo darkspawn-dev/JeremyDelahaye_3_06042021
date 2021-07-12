@@ -33,7 +33,6 @@
    align-content: center;
    width: 90%;
    padding: 20px 0 0 10px;
-   margin-right: 20px;
  }
 
  .menu {
@@ -55,6 +54,7 @@
    justify-content: center;
    margin-top: 20px;
    padding-right: 15px;
+   padding-left: 15px;
  }
 
  #plats,
@@ -78,6 +78,7 @@
    border: none;
    border-radius: 10px;
    background: linear-gradient(#D579D5, #9356DC);
+   box-shadow: $secondary 0px 4px 8px ;
    color: #fff;
    font-weight: 600;
    cursor: pointer;
@@ -189,13 +190,13 @@
 
  /*************************** Animation Menu **********************************/
  #entrees {
-   @include fade-in('200ms');
+   @include fade-in('400ms');
  }
 
  #plats {
-   @include fade-in('500ms');
+   @include fade-in('700ms');
  }
 
  #desserts {
-   @include fade-in('900ms');
+   @include fade-in('1200ms');
  }
