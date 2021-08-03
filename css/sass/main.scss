@@ -71,13 +71,12 @@
   flex-direction: row;
   align-items: center;
   height: 70px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-radius: 17px 17px 17px 17px;
   width: 300px;
 }
 .minicard-container:active {
-  background-color: #f2eafb;
-
+  background-color: #f5edff;
   &:active .fas {
     color: $primary;
   }
@@ -180,13 +179,16 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+
 }
 
 span {
-  line-height: 1;
+  line-height: 1.5;
   font-family: 'Roboto', sans-serif;
 }
-
+.new {
+  opacity: 50%;
+}
 
 /***************************** Responsive *****************************/
 
