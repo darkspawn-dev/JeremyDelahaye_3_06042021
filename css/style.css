@@ -140,20 +140,22 @@ a {
     opacity: 1;
   }
 }
-/*************************** Animation Card Restaurant **********************************/
+/*************************** Animation Card Restaurant **********************************
 @keyframes clignote {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
-}
+}*/
 footer {
-  background-color: darkslategrey;
+  background-color: #353535;
 }
 footer h5 {
   padding: 20px 0 10px 10px;
@@ -451,7 +453,7 @@ header {
   }
 
   .heart:active {
-    animation: fill 0.8s ease-in-out forwards;
+    animation: fill 0.8s ease-in-out;
     display: inline-block;
     opacity: 1;
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #909090);
@@ -460,6 +462,10 @@ header {
     font-weight: bold;
   }
 }
+.heart {
+  font-size: 20px;
+}
+
 /*************************** Animation loading page **********************************/
 .loader {
   display: flex;
@@ -573,13 +579,13 @@ header {
   flex-direction: row;
   align-items: center;
   height: 70px;
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   border-radius: 17px 17px 17px 17px;
   width: 300px;
 }
 
 .minicard-container:active {
-  background-color: #f2eafb;
+  background-color: #f5edff;
 }
 .minicard-container:active:active .fas {
   color: #9356DC;
@@ -687,8 +693,12 @@ header {
 }
 
 span {
-  line-height: 1;
+  line-height: 1.5;
   font-family: "Roboto", sans-serif;
+}
+
+.new {
+  opacity: 50%;
 }
 
 /***************************** Responsive *****************************/
@@ -814,4 +824,3 @@ span {
 }
 
 /*# sourceMappingURL=style.css.map */
-
